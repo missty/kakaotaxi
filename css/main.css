@@ -543,7 +543,10 @@ margin-top: 12px;
 	font-size: 3em;
 	line-height: 1.4em;
 }
-
+.guide-box p.change {
+	font-size: 2em;
+	line-height: 1.4em;
+}
 
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
