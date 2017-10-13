@@ -27,8 +27,7 @@
 		<div id="page-wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-5 pull-left"><img class="img-fluid destin1" src="img/destination_1.jpg" alt="">
-				<img class="img-fluid destin2" src="img/destination_2.jpg" alt=""></div>
+				<div class="col-sm-5 pull-left"><img id="map" class="img-fluid destin1" src="img/destination_1.jpg" alt=""></div>
 				<!-- <div class="col-sm-1"></div> -->
 				<div class="col-sm-7 pull-right">
 
@@ -71,12 +70,16 @@
     <script type='text/javascript'>
 function stopRKey(evt) 
 {
+   var  specImage = document.getElementById("amp"),
    var evt=(evt) ? evt : ((event) ? event : null);
    var node=(evt.target)?evt.target:((evt.srcElement)?evt.srcElement:null);
-   if ((evt.keyCode == 13) && (node.type=="text")) {return false;}
+   if ((evt.keyCode == 13) && (node.type=="text")) {
+	   specImage.src = "img/destination_2.jpg";
+	   return false;}
 }
 
 document.onkeypress = stopRKey;
+
 </script>
   </body>
 
