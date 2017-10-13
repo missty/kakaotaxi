@@ -518,6 +518,9 @@
 		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 	}
 	
+	.cancel {
+	background: #c0c0c0 !important;
+	}
 
 .onboard .button {
 	display: inline-block;
