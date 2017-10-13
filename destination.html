@@ -44,7 +44,7 @@
 									<form id="contactForm" name="sentMessage" novalidate>
 									<div class="form-group mb-5">
 
-										<input class="form-control" id="getdestination" type="text" placeholder="변경할 목적지를 입력해주세요.">
+										<input class="form-control input1" id="getdestination" type="text" placeholder="변경할 목적지를 입력해주세요.">
 										</div>
 
 <!-- 										<div class="form-group mt-5">
@@ -70,13 +70,21 @@
     <script type='text/javascript'>
 function stopRKey(evt) 
 {
-   var  specImage = document.getElementById("amp"),
+   var  specImage = document.getElementById("map");
    var evt=(evt) ? evt : ((event) ? event : null);
    var node=(evt.target)?evt.target:((evt.srcElement)?evt.srcElement:null);
    if ((evt.keyCode == 13) && (node.type=="text")) {
 	   specImage.src = "img/destination_2.jpg";
 	   return false;}
-}
+} 
+
+/* 
+$(".input1").on('keyup', function (e) {
+	var  specImage = document.getElementById("map");
+    if (e.keyCode == 13) {
+    	specImage.src = "img/destination_2.jpg";
+    }
+}); */
 
 document.onkeypress = stopRKey;
 
