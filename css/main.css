@@ -690,6 +690,14 @@ margin-top: 12px;
 			.pull-right {
 			display: inline-block;
 			float: right;}
+			.button-box {
+			position: relative;}
+			.button-left {
+			position:absolute; top:0; left: 0; 
+			}
+			.button-right {
+			position:absolute; top:0; right: 0;
+			}
 
 		#header .button {
 			display: inline-block;
