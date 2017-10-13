@@ -677,6 +677,11 @@ margin-top: 12px;
 			#header h1 a {
 				color: inherit;
 			}
+			.pull-left {
+			float: left;
+			}
+			.pull-right {
+			float: right;}
 
 		#header .button {
 			display: inline-block;
