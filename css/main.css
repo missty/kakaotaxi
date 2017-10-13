@@ -91,7 +91,8 @@
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
 		color: #483949;
-		line-height: 1.25em;
+		line-height: 1.5em;
+		vertical-align: baseline;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -516,6 +517,27 @@
 		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 	}
+	
+
+.onboard .button {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 1em;
+	float: right;
+	padding: 0.65em 1em 0.65em 1em;
+margin-top: 12px;
+}
+
+.guide-box {
+	margin-top: 160px;
+
+}
+
+.guide-box p {
+	font-size: 3.2em;
+	line-height: 1.5em;
+}
+
 
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
@@ -599,6 +621,9 @@
 		padding: 6em 0 6em 0;
 	}
 
+	body.onboard {
+		margin: 2em 3em;
+	}
 		.wrapper.style2 {
 			padding-top: 0;
 		}
@@ -1532,24 +1557,22 @@
 				padding-right: 1em;
 			}
 
-		/* Carousel */
-
-			.carousel {
-				padding: 0.5em 0 0.5em 0;
-			}
-
-				.carousel .reel {
-					padding: 0 0.5em 0 0.5em;
-				}
-
-				.carousel article {
-					width: 14em;
-					padding-bottom: 2em;
-					margin: 0 0.5em 0 0;
-				}
-
-					.carousel article .image {
-						margin-bottom: 2em;
-					}
-
+	
+	
+	
+	.inner .pull-right {
+		float: right !important;
 	}
+
+	h2 .pull-right {
+	display: inline-block;
+	float: right !important;
+	
+	}
+	
+	.onboard .container {
+	padding: 10px !important;
+	}
+
+
+
