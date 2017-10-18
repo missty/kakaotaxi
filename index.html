@@ -23,10 +23,13 @@
 
   </head>
 
-	<body class="mainpage">
+	<body class="mainpage" style="position: relative;">
 
+        <a style="display:inline-block; position: absolute; top:0; right:0; border-bottom: 0px; z-index:99;" href="javascript:history.go(-1)" ><div style="height:70px; width:100px; background-color: red;"></div>
+        </a>
+        <a style="display:inline-block; position: absolute; top:50vh; right:0; border-bottom: 0px; z-index:99" href="index.html" ><div style="height:70px; width:100px; background-color: green;"></div></a>
+        <a style="display:inline-block; position: absolute; top:100 right:0; border-bottom: 0px; z-index:99" href="check_seat.html" ><div style="height:70px; width:100px; background-color: blue;"></div></a>    
 
-    
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -34,13 +37,13 @@
 
 					<!-- Inner -->
 						<div class="inner">
-							<header>
+							<div>
 								<h1>KAIST Taxi</h1>
 								<h2>카이스트 무인택시에 탑승하신 것을 환영합니다.</h2>
-							</header>
-							<footer>
-								<a href="on_board.html" class="button circled scrolly">출발하기</a>
-							</footer>
+                            </div>
+                            <div id="content">
+                                <h2>"안전한 운행을 위해 안전벨트를 착용해주세요."</h2>
+							</div>
 						</div>
 
 

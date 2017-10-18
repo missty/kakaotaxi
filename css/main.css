@@ -522,32 +522,6 @@
 	background: #c0c0c0 !important;
 	}
 
-.onboard .button {
-	display: inline-block;
-	font-size: 20px;
-	line-height: 1em;
-	float: right;
-	padding: 0.65em 1em 0.65em 1em;
-margin-top: 12px;
-}
-
-.guide-box {
-	margin-top: 100px;
-
-}
-.guide-box a {
-	text-decoration: none;
-
-	}
-.guide-box p {
-	font-size: 3em;
-	line-height: 1.4em;
-}
-.guide-box p.change {
-	font-size: 1.6em;
-	line-height: 1.4em;
-}
-
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -772,7 +746,7 @@ body.mainpage{
 		left: 0;
 		width: 100%;
 		text-align: center;
-		padding: 1.5em 0 1.5em 0;
+		padding: 0em 0 1.5em 0;
 		z-index: 1;
 		overflow: hidden;
 	}
@@ -902,6 +876,10 @@ body.mainpage{
 		}
 
 /* Content */
+
+	#content {
+		padding: 20px 0px 20px 0px;
+	}
 
 	#content > hr {
 		top: 3em;
@@ -1586,8 +1564,8 @@ body.mainpage{
 			}
 
 	
-	
-	
+/* kaist taxi interaction */
+
 	.inner .pull-right {
 		float: right !important;
 	}
@@ -1595,12 +1573,34 @@ body.mainpage{
 	h2 .pull-right {
 	display: inline-block;
 	float: right !important;
-	
 	}
 	
 	.onboard .container {
 	padding: 10px !important;
 	}
 
+	.onboard .button {
+		display: inline-block;
+		font-size: 20px;
+		line-height: 1em;
+		float: right;
+		padding: 0.65em 1em 0.65em 1em;
+	margin-top: 12px;
+	}
 
+	.guide-box {
+		margin-top: 100px;
 
+	}
+	.guide-box a {
+		text-decoration: none;
+
+		}
+	.guide-box p {
+		font-size: 3em !important; 
+		line-height: 1.4em;
+	}
+	.guide-box p.change {
+		font-size: 1.6em;
+		line-height: 1.4em;
+	}
