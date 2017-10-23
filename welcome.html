@@ -58,12 +58,12 @@
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/createjs.js"></script>  
-
-    <script>
+    <script type="text/javascript">
+        createjs.Sound.alternateExtensions = ["mp3"];
         createjs.Sound.registerSound("sound/01_hello.mp3", "x");
         setTimeout(function () {
             createjs.Sound.play("x");
-        }, 10000)
+        }, 500)
     </script>
     <!-- <embed class="soundplay" src="sound/01_hello.mp3"/> -->
   </body>

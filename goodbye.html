@@ -66,10 +66,11 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/createjs.js"></script>
     <script>
-    createjs.Sound.registerSound("sound/06_goodbye.mp3", "x");
-    setTimeout(function () {
-        createjs.Sound.play("x");
-    }, 10000)
+        createjs.Sound.alternateExtensions = ["mp3"];
+        createjs.Sound.registerSound("sound/06_goodbye.mp3", "x");
+        setTimeout(function () {
+            createjs.Sound.play("x");
+        }, 500)
     </script>
     <!-- <embed class="soundplay" src="sound/06_goodbye.mp3"/> -->
     

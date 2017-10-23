@@ -51,10 +51,19 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/createjs.js"></script>
     <script>
-    createjs.Sound.registerSound("sound/04_destination_changed.mp3", "x");
-    setTimeout(function () {
-        createjs.Sound.play("x");
-    }, 10000);
+        createjs.Sound.alternateExtensions = ["mp3"];
+        createjs.Sound.registerSound("sound/04_destination_changed.mp3", "x");
+        
+        setTimeout(function () {
+            createjs.Sound.play("x", function(){
+            });
+        }, 500);
+        setTimeout(function(){
+            location.href="on_board_onroad_2.html";
+        }, 5000);
+
+            
+        
     </script>
     <!-- <embed class="soundplay" src="sound/04_destination_changed.mp3"/> -->
   </body>

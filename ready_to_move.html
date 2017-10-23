@@ -45,30 +45,25 @@
                 <hr/>
 							</div>
 							<footer>
-								<div class="pull-left">
+								<div class="pull-middle">
 									<h3><span class="place-title">출발지 :</span> 카이스트</h3>
 									<h3><span class="place-title">목적지 :</span> 유성구청</h3>								
 								</div>
-								<div class="pull-right"><a href="on_board_onroad_1.html" class="button circled scrolly">출발하기</a></div>
 							</footer>
 						</div>
-
-
 				</div>
-
-
-
 		</div>
 		
     <!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/createjs.js"></script>
-    <script>
-    createjs.Sound.registerSound("sound/02_check_go.mp3", "x");
-    setTimeout(function () {
-        createjs.Sound.play("x");
-    }, 10000);
+    <script src="js/createjs.js"></script>  
+    <script type="text/javascript">
+        createjs.Sound.alternateExtensions = ["mp3"];
+        createjs.Sound.registerSound("sound/02_check_go.mp3", "x");
+        setTimeout(function () {
+            createjs.Sound.play("x");
+        }, 500);
     </script>
     <!-- <embed class="soundplay" src="sound/02_check_go.mp3"/> -->
   </body>
