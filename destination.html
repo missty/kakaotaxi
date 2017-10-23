@@ -41,15 +41,18 @@
 						</div>
 						<div class="guide-box">
 							<p class="change mb-2">새로운 목적지를 입력해주세요.</p>
-							<form id="contactForm" name="sentMessage" novalidate>
+							<form id="contactForm" name="sentMessage" onsubmit="return changeDestination()" action="on_board_changed.html">
 								<div class="form-group">
-									<input class="form-control" id="getdestination" type="text" placeholder="변경할 목적지를 입력해주세요.">
+									<input class="form-control" id="getdestination" type="text" placeholder="변경할 목적지를 입력해주세요." >
 								</div>
-							</form>
-							<p class="change mt-5 mb-2">목적지를 변경하시겠습니까?</p>
-							<div class="button-box">							
+							
+								<p class="change mt-5 mb-2">목적지를 변경하시겠습니까?</p>
+								<div class="button-box">
+									<input type="submit" value="목적지 변경하기">
+								</div>
+							</form>	
+							<div>
 								<a href="javascript:history.go(-1)" class="button-left button cancel">취소</a>
-								<a href="on_board_changed.html" class="button-right button">목적지 변경하기</a>
 							</div>
 						</div>
 					</div>
@@ -61,19 +64,23 @@
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type='text/javascript'>
-			function stopRKey(evt) 
+
+			function changeDestination()
 			{
-			   var  specImage = document.getElementById("map");
-			   var evt=(evt) ? evt : ((event) ? event : null);
-			   var node=(evt.target)?evt.target:((evt.srcElement)?evt.srcElement:null);
-			   if ((evt.keyCode == 13) && (node.type=="월평역")) {
-				   alert('enter key is pressed');
-				   specImage.src = "img/destination_2.jpg";
-				   return false;
-				 }
+
+				var toDestination = document.getElementById("getdestination").value;
+          		if (toDestination == "")
+          		{
+					alert("변경하려는 목적지를 입력해주세요.")
+					return false
+				}else if(toDestination == "월평역"){
+					return
+				}else{
+					alert("죄송합니다. 현재는 월평역만 목적지 변경이 가능합니다.");
+					return false
+				}
 			}
-			
-			document.onkeypress = stopRKey;
+
 		</script>
   </body>
 
