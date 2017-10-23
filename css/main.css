@@ -83,7 +83,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 h3 {
@@ -135,9 +135,11 @@ hr {
 	position: relative;
 	display: block;
 	border: 0;
-	height: 6px;
+	height: 4px;
 	border-top: solid 1px rgba(128, 128, 128, 0.2);
 	border-bottom: solid 1px rgba(128, 128, 128, 0.2);
+	margin-top: 0rem;
+	margin-bottom: 0rem;
 }
 
 hr:before, hr:after {
@@ -146,7 +148,7 @@ hr:before, hr:after {
 	top: -8px;
 	display: block;
 	width: 1px;
-	height: 21px;
+	height: 4px;
 	background: rgba(128, 128, 128, 0.2);
 }
 
@@ -165,7 +167,6 @@ body.mainpage {
 }
 body.mainpage #header {
 	height: 60vh;
-	min-height: 30em;
 }
 body.mainpage #header:after {
 	content: '';
@@ -265,7 +266,7 @@ a.block {
 
 .content {
 	text-align: center;
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
 .content h2 {
@@ -280,7 +281,7 @@ a.block {
 	display: inline-block;
 	border: 0;
 	outline: 0;
-	margin: 20px auto;
+	margin: 0.5rem auto;
 }
 
 .image.fit {
