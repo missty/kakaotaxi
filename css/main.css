@@ -504,6 +504,11 @@ div.summary p .value {
 	font-weight: 600;
 }
 
+div.summary .left {
+	float: left;
+	margin-right: 4em;
+}
+
 /* sound */
 .soundplay {
 	width:0;
