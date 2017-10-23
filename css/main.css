@@ -309,7 +309,7 @@ button,
 	text-align: center;
 	border-radius: 0.5em;
 	text-decoration: none;
-	padding: 0.65em 2em 0.65em 2em;
+	padding: 0.65em 1.5em 0.65em 1.5em;
 	border: 0;
 	cursor: pointer;
 	outline: 0;
@@ -373,7 +373,7 @@ body.onboard {
 	overflow-y: hidden;
 }
 body.onboard #page-wrapper {
-		padding: 2em;
+		padding: 1.5em 2em;
 }
 
 body.onboard #header {
@@ -435,14 +435,20 @@ body.onboard #header:after {
 }
 
 .onboard h3 > a {
-	font-size: 20px;
+	font-size: 0.5em;
 	line-height: 1em;
 	float: right !important;
 }
 
+.onboard .left {
+	float: left;
+	margin-right: 20px;
+}
+
+
 /* Guide Box */
 .guide-box {
-	margin-top: 100px;
+	margin-top: 50px;
 
 }
 .guide-box a {
@@ -498,4 +504,9 @@ div.summary p .value {
 .soundplay {
 	width:0;
 	height:0;
+}
+
+/* Map */
+.map {
+	width: 270px;
 }
