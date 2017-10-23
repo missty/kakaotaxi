@@ -373,7 +373,7 @@ body.onboard {
 	overflow-y: hidden;
 }
 body.onboard #page-wrapper {
-		padding: 1.5em 2em;
+		padding: 1.5em 2.5em;
 }
 
 body.onboard #header {
@@ -442,7 +442,7 @@ body.onboard #header:after {
 
 .onboard .left {
 	float: left;
-	margin-right: 20px;
+	margin-right: 1em;
 }
 
 
