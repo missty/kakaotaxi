@@ -492,3 +492,9 @@ div.summary p {
 div.summary p .value {
 	font-weight: 600;
 }
+
+/* sound */
+.soundplay {
+	width:0;
+	height:0;
+}
