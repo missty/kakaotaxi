@@ -14,7 +14,7 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/earlyaccess/notosanskr.css?family=Noto+Sans+KR' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 	
@@ -23,13 +23,12 @@
 
   </head>
 
-	<body class="mainpage" style="position: relative;">
-
-        <a style="display:inline-block; position: absolute; top:0; right:0; border-bottom: 0px; z-index:99;" href="javascript:history.go(-1)" ><div style="height:70px; width:100px; background-color: red;"></div>
-        </a>
-        <a style="display:inline-block; position: absolute; top:50vh; right:0; border-bottom: 0px; z-index:99" href="index.html" ><div style="height:70px; width:100px; background-color: green;"></div></a>
-        <a style="display:inline-block; position: absolute; top:100 right:0; border-bottom: 0px; z-index:99" href="on_board.html" ><div style="height:70px; width:100px; background-color: blue;"></div></a>    
-
+	<body class="mainpage">
+			<div class="button-wrapper">
+	        <div class="navbtn top-btn"><a class="block" href="javascript:history.go(-1)"></a></div>
+	        <div class="navbtn middle-btn"><a class="block" href="index.html" ></a></div>
+	        <div class="navbtn bottom-btn"><a class="block" href="on_board_onroad_1.html" ></a></div>
+			</div>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -39,11 +38,19 @@
 						<div class="inner">
 							<div>
 								<h1>KAIST Taxi</h1>
-								<h2>"안전한 탑승이 확인되었습니다."</h2>
-                            </div>
-                            <div>
-                                <a href="on_board_beltoff.html" class="button circled scrolly">출발하기</a>
-                            </div>>                             
+              </div>
+              <div class="content text-center">
+                <hr/>
+								<h2>안전한 탑승이 확인되었습니다.</h2>
+                <hr/>
+							</div>
+							<footer>
+								<div class="pull-left">
+									<h3><span class="place-title">출발지 :</span> 카이스트</h3>
+									<h3><span class="place-title">목적지 :</span> 유성구청</h3>								
+								</div>
+								<div class="pull-right"><a href="on_board_onroad_1.html" class="button circled scrolly">출발하기</a></div>
+							</footer>
 						</div>
 
 

@@ -23,72 +23,58 @@
 
   </head>
 
-	<body class="onboard">    
+	<body class="onboard">
+		<div class="button-wrapper">
+        <div class="navbtn top-btn"><a class="block " href="javascript:history.go(-1)"></a></div>
+        <div class="navbtn middle-btn"><a class="block " href="index.html" ></a></div>
+        <div class="navbtn bottom-btn"><a class="block " href="ready_to_move.html" ></a></div>
+		</div>	
+
 		<div id="page-wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-5 pull-left"><img id="map" class="img-fluid destin1" src="img/destination_1.jpg" alt=""></div>
-				<!-- <div class="col-sm-1"></div> -->
-				<div class="col-sm-7 pull-right">
-
-					<!-- Main -->
-					<div class="inner">
-	
-									<h2><span class="place-title">목적지 변경</h2>							
-
-	</div>
-	<div class="guide-box mt-5">
-
-									<p class="change mb-2">새로운 목적지를 입력해주세요.</p>
-
-									<form id="contactForm" name="sentMessage" novalidate>
-									<div class="form-group mb-5">
-
-										<input class="form-control input1" id="getdestination" type="text" placeholder="변경할 목적지를 입력해주세요.">
-										</div>
-
-<!-- 										<div class="form-group mt-5">
-											<p class="change mb-1">목적지를 변경하시겠습니까?</p>
-											<div class="button-box">
-												<button id="sendMessageButton" class="button-left button cancel" type="cancel">취소</button>
-			                  <button id="sendMessageButton" class="button-right button" type="submit">목적지 변경하기</button>
-		                  </div>
-										</div> -->
-									</form>
-<p class="change mb-1">목적지를 변경하시겠습니까?</p>
-									<div class="button-box">							
-								<a href="on_board_onroad.html" class="button-left button cancel">취소</a>
-								<a href="on_board_changed.html" class="button-right button">목적지 변경하기</a></div>
-								
-
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 pull-left"><img class="img-fluid" src="img/destination_1.jpg" alt=""></div>
+					<div class="col-sm-7 pull-right">
+						<!-- Main -->
+						<div class="inner">
+							<h2>목적지 변경</h2>															
+						</div>
+						<div class="guide-box">
+							<p class="change mb-2">새로운 목적지를 입력해주세요.</p>
+							<form id="contactForm" name="sentMessage" novalidate>
+								<div class="form-group">
+									<input class="form-control" id="getdestination" type="text" placeholder="변경할 목적지를 입력해주세요.">
+								</div>
+							</form>
+							<p class="change mt-5 mb-2">목적지를 변경하시겠습니까?</p>
+							<div class="button-box">							
+								<a href="javascript:history.go(-1)" class="button-left button cancel">취소</a>
+								<a href="on_board_changed.html" class="button-right button">목적지 변경하기</a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div></div></div>
+			</div>
 		</div>
+
 		<!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type='text/javascript'>
-function stopRKey(evt) 
-{
-   var  specImage = document.getElementById("map");
-   var evt=(evt) ? evt : ((event) ? event : null);
-   var node=(evt.target)?evt.target:((evt.srcElement)?evt.srcElement:null);
-   if ((evt.keyCode == 13) && (node.type=="text")) {
-	   specImage.src = "img/destination_2.jpg";
-	   return false;}
-} 
-
-/* 
-$(".input1").on('keyup', function (e) {
-	var  specImage = document.getElementById("map");
-    if (e.keyCode == 13) {
-    	specImage.src = "img/destination_2.jpg";
-    }
-}); */
-
-document.onkeypress = stopRKey;
-
-</script>
+			function stopRKey(evt) 
+			{
+			   var  specImage = document.getElementById("map");
+			   var evt=(evt) ? evt : ((event) ? event : null);
+			   var node=(evt.target)?evt.target:((evt.srcElement)?evt.srcElement:null);
+			   if ((evt.keyCode == 13) && (node.type=="월평역")) {
+				   alert('enter key is pressed');
+				   specImage.src = "img/destination_2.jpg";
+				   return false;
+				 }
+			}
+			
+			document.onkeypress = stopRKey;
+		</script>
   </body>
 
 </html>
