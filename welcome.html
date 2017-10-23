@@ -55,26 +55,17 @@
 
 
 		</div>
-		<audio src="sound/01_hello.mp3" autoplay="autoplay"></audio>
+		<!-- <audio src="sound/01_hello.mp3" autoplay="autoplay"></audio> -->
     <!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/createjs.js"></script>
     <script>
-    function playHTML5(sound, soundcv){
-        // sound = url to m4a audio file
-        // soundcv = div in which the audioplayer should go
-
-var audio = document.createElement('audio');
-audio.src = sound;
-audio.controls = "controls";
-if (currentSound != null){
-soundcv.replaceChild(audio,currentSound);
-} else {
-soundcv.appendChild(audio);
-}
-currentSound = audio;
-}
+    createjs.Sound.registerSound("sound/01_hello.mp3", "x");
+    setTimeout(function () {
+        createjs.Sound.play("x");
+    }, 10000)
+    
 
     
 		</script>
