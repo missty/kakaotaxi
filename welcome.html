@@ -20,7 +20,6 @@
 	
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
-    
 
   </head>
 
@@ -29,7 +28,7 @@
 			<div class="button-wrapper">
 	        <div class="navbtn top-btn"><a class="block " href="javascript:history.go(-1)"></a></div>
 	        <div class="navbtn middle-btn"><a class="block " href="index.html" ></a></div>
-	        <div class="navbtn bottom-btn"><a class="block " href="welcome.html" ></a></div>
+	        <div class="navbtn bottom-btn"><a class="block " href="ready_to_move.html" ></a></div>
 			</div>
 		<div id="page-wrapper">
 
@@ -41,7 +40,12 @@
 							<div>
 								<h1>KAIST Taxi</h1>
 								<h2>카이스트 무인택시에 탑승하신 것을 환영합니다.</h2>
-
+              </div>
+              <div class="content text-center">
+                <hr/>
+								<h2>안전한 운행을 위해 안전벨트를 착용해주세요.</h2>
+								<img class="image small" src="img/seatbelt.png"/>
+                <hr/>
 							</div>
 						</div>
 
@@ -51,10 +55,18 @@
 
 
 		</div>
-		
+		<audio src="sound/01_hello.mp3" autoplay="autoplay"></audio>
     <!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script>
+    createjs.Sound.registerSound("sound/01_hello.mp3", "x");
+    setTimeout(function () {
+        createjs.Sound.play("x");
+    }, 10000);
+		</script>
+    <!-- <embed class="soundplay" src="sound/01_hello.mp3"/> -->
   </body>
   
 

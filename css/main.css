@@ -42,7 +42,7 @@ body {
 /* Basic */
 
 body {
-	background: #f0f4f4;
+	background: #FCFEFC;
 	color: #5b5b5b;
 	font-size: 15pt;
 	line-height: 1.85em;
@@ -83,15 +83,15 @@ h1 {
 }
 
 h2 {
-	font-size: 2.25em;
+	font-size: 1.5em;
 }
 
 h3 {
-	font-size: 1.75em;
+	font-size: 1.5em;
 }
 
 h4 {
-	font-size: 1.25em;
+	font-size: 1em;
 	margin: 0 0 0.25em 0;
 }
 
@@ -135,9 +135,11 @@ hr {
 	position: relative;
 	display: block;
 	border: 0;
-	height: 6px;
+	height: 4px;
 	border-top: solid 1px rgba(128, 128, 128, 0.2);
 	border-bottom: solid 1px rgba(128, 128, 128, 0.2);
+	margin-top: 0rem;
+	margin-bottom: 0rem;
 }
 
 hr:before, hr:after {
@@ -146,7 +148,7 @@ hr:before, hr:after {
 	top: -8px;
 	display: block;
 	width: 1px;
-	height: 21px;
+	height: 4px;
 	background: rgba(128, 128, 128, 0.2);
 }
 
@@ -165,7 +167,6 @@ body.mainpage {
 }
 body.mainpage #header {
 	height: 60vh;
-	min-height: 30em;
 }
 body.mainpage #header:after {
 	content: '';
@@ -221,7 +222,7 @@ body.mainpage #header:after {
 }
 
 .mainpage #header header > p {
-	font-size: 1.25em;
+	font-size: 1em;
 	margin: 0;
 }
 
@@ -265,7 +266,7 @@ a.block {
 
 .content {
 	text-align: center;
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
 .content h2 {
@@ -280,12 +281,12 @@ a.block {
 	display: inline-block;
 	border: 0;
 	outline: 0;
-	margin: 20px auto;
+	margin: 0.5rem auto;
 }
 
 .image.fit {
 	display: block;
-	width: 100%;
+	height:128px;
 }
 
 .image.small {
@@ -308,7 +309,7 @@ button,
 	text-align: center;
 	border-radius: 0.5em;
 	text-decoration: none;
-	padding: 0.65em 2em 0.65em 2em;
+	padding: 0.65em 1.5em 0.65em 1.5em;
 	border: 0;
 	cursor: pointer;
 	outline: 0;
@@ -352,17 +353,17 @@ background: #c0c0c0 !important;
 /* Footer */
 
 footer {
-	margin: 2.5em 0 0 0;
+	margin: 2em 0 0 0;
 }
 
 footer .button {
 	display: inline-block;
 	border-radius: 100%;
-	width: 4.5em;
-	height: 4.5em;
-	line-height: 4.5em;
+	width: 4em;
+	height: 4em;
+	line-height: 4em;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	padding: 0;
 }
 
@@ -372,7 +373,7 @@ body.onboard {
 	overflow-y: hidden;
 }
 body.onboard #page-wrapper {
-		padding: 2em;
+		padding: 1.5em 2.5em;
 }
 
 body.onboard #header {
@@ -429,19 +430,25 @@ body.onboard #header:after {
 }
 
 .onboard #header header > p {
-	font-size: 1.25em;
+	font-size: 1em;
 	margin: 0;
 }
 
 .onboard h3 > a {
-	font-size: 20px;
+	font-size: 0.5em;
 	line-height: 1em;
 	float: right !important;
 }
 
+.onboard .left {
+	float: left;
+	margin-right: 1em;
+}
+
+
 /* Guide Box */
 .guide-box {
-	margin-top: 100px;
+	margin-top: 50px;
 
 }
 .guide-box a {
@@ -449,7 +456,7 @@ body.onboard #header:after {
 
 	}
 .guide-box p {
-	font-size: 3em;
+	font-size: 2em;
 	line-height: 1.4em;
 	margin-bottom: 0em;
 }
@@ -484,11 +491,22 @@ div.summary h4 {
 
 div.summary p {
 	color: #000;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	line-height: 2em;
 	margin-bottom: 0px;
 }
 
 div.summary p .value {
 	font-weight: 600;
+}
+
+/* sound */
+.soundplay {
+	width:0;
+	height:0;
+}
+
+/* Map */
+.map {
+	width: 270px;
 }
