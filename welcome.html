@@ -62,6 +62,9 @@
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
     <script>
     createjs.Sound.registerSound("sound/01_hello.mp3", "x");
+    setTimeout(function () {
+        createjs.Sound.play("x");
+    }, 10000);
 		</script>
     <!-- <embed class="soundplay" src="sound/01_hello.mp3"/> -->
   </body>
