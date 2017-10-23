@@ -286,7 +286,7 @@ a.block {
 
 .image.fit {
 	display: block;
-	width: 100%;
+	height:128px;
 }
 
 .image.small {
