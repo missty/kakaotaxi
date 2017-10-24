@@ -21,17 +21,17 @@
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
 
-    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
     <script>
-    window.onload = function() {
-        document.getElementById("my_audio").play();
-    }
+    var audio = document.getElementById('audio');
+    audio.play();
     </script>
 
   </head>
 
-	<body class="mainpage" onload="playSound();">
-
+	<body class="mainpage">
+<audio id="audio" controls preload="auto">
+    <source src="sound/01_hello.mp3" type="audio/mp3"/>
+</audio>
 			<div class="button-wrapper">
 	        <div class="navbtn top-btn"><a class="block " href="javascript:history.go(-1)"></a></div>
 	        <div class="navbtn middle-btn"><a class="block " href="index.html" ></a></div>
@@ -57,7 +57,7 @@
 						</div>
 				</div>
 		</div>		
-		<audio id="my_audio" src="sound/01_hello.mp3" autoplay="autoplay"></audio>
+<!-- 		<audio id="my_audio" src="sound/01_hello.mp3" autoplay="autoplay"></audio> -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>

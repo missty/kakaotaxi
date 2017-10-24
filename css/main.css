@@ -228,7 +228,7 @@ body.mainpage #header:after {
 
 /* navigation buttons */
 body div.button-wrapper {
-	width: 100px !important;
+	width: 50px !important;
 	height: 100vh;
 	position: absolute !important;
 	right:0;
@@ -238,8 +238,8 @@ body div.button-wrapper {
 }
 
 div.navbtn {
+	width: 50px !important;	
 	height: 100px !important;
-	width: 100px !important;
 	background-color: inherit;
 }
 div.top-btn {
@@ -518,4 +518,22 @@ div.summary .left {
 /* Map */
 .map {
 	width: 270px;
+}
+
+/* Form Group */
+
+/* .onboard #page-wrapper .right .guide-box div.form-group {
+	position: absolute;
+	width: 50%;
+	margin-left: 1em;
+	margin-right: 1em;
+	top: 55vh;
+}
+ */
+/* .onboard #page-wrapper .right .guide-box div.form-group .form-control {
+	margin: 0px;
+	padding: 0px;
+} */
+#contactForm {
+	height: 200px;
 }
