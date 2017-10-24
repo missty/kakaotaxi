@@ -21,9 +21,16 @@
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
 
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script>
+    window.onload = function() {
+        document.getElementById("my_audio").play();
+    }
+    </script>
+
   </head>
 
-	<body class="mainpage">
+	<body class="mainpage" onload="playSound();">
 
 			<div class="button-wrapper">
 	        <div class="navbtn top-btn"><a class="block " href="javascript:history.go(-1)"></a></div>
@@ -48,41 +55,16 @@
                 <hr/>
 							</div>
 						</div>
-
-
 				</div>
-
-
-
-		</div>
-		<!-- <audio src="sound/01_hello.mp3" autoplay="autoplay" type="audio/mpeg" ></audio> -->
+		</div>		
+		<audio id="my_audio" src="sound/01_hello.mp3" autoplay="autoplay"></audio>
 
     <!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script>
-    window.addEventListener('load', function () {
-        var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        var source = audioCtx.createBufferSource();
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', '01_hello.mp3');
-        xhr.responseType = 'arraybuffer';
-        xhr.addEventListener('load', function (r) {
-            audioCtx.decodeAudioData(
-                    xhr.response, 
-                    function (buffer) {
-                        source.buffer = buffer;
-                        source.connect(audioCtx.destination);
-                        source.loop = false;
-                    });
-            source.start(0);
-        });
-        xhr.send();
-    });
-    
 
-    
 		</script>
     <!-- <embed class="soundplay" src="sound/01_hello.mp3"/> -->
   </body>
